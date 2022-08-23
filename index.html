@@ -110,6 +110,19 @@
     <main id="main" class="site-main">
 
         <!-- Hello section -->
+	    <script>
+  window.watsonAssistantChatOptions = {
+    integrationID: "ba7a266a-0ccf-4f36-a00e-82654373bb40", // The ID of this integration.
+    region: "us-south", // The region your integration is hosted in.
+    serviceInstanceID: "0c749d42-6260-496b-9b5b-e0ecc4b48528", // The ID of your service instance.
+    onLoad: function(instance) { instance.render(); }
+  };
+  setTimeout(function(){
+    const t=document.createElement('script');
+    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+    document.head.appendChild(t);
+  });
+</script>
 		<section class="site-section section-hello" id="intro">
 			<div class="container">
 				<h2>HELLO &amp; WELCOME</h2>
